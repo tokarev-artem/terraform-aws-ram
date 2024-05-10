@@ -1,3 +1,6 @@
+# AWS RAM module
+
+This module allows you to share [supported](https://docs.aws.amazon.com/ram/latest/userguide/shareable.html) AWS resources to another accounts or AWS organization
 
 # Example usage:
 ```hcl
