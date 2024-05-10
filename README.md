@@ -2,7 +2,7 @@
 # Example usage:
 ```hcl
 module "aws-ram" {
-  source        = "../"
+  source        = "RealArtemiy/ram/aws"
   version       = "~> 1.0"
   name          = "Share Subnets to develop account"
   resource_arns = ["arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-1234567abcd", "arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-abcdef1234"]

@@ -1,1 +1,1 @@
-## This example was provider to demonstrate resource sharing to other AWS accounts
+## This example was provided to demonstrate resource sharing to other AWS accounts

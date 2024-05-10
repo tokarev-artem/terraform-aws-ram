@@ -1,7 +1,7 @@
 module "share_to_principal" {
   source        = "../../"
-  name          = "share ssm"
-  resource_arns = ["arn:aws:ssm:eu-central-1:123456789101:parameter/parametername", "arn:aws:ssm:eu-central-1:123456789101:parameter/anotherparameter"]
+  name          = "share subnets to dev account"
+  resource_arns = ["arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-11111111111", "arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-22222222222"]
   principals    = ["101987654321"]
   tags = {
     OwnedBy = "my_department"
