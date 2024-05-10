@@ -6,7 +6,7 @@ module "aws-ram" {
   version       = "~> 1.0"
   name          = "Share Subnets to develop account"
   resource_arns = ["arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-1234567abcd", "arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-abcdef1234"]
-  principals    = ["arn:aws:organizations::101987654321:organization/o-abcdef1234", "123456789101"]
+  principals    = ["arn:aws:organizations::101987654321:organization/o-abcdef1234", "55555555555"]
   tags = {
     OwnedBy = "network"
   }
@@ -16,7 +16,7 @@ For organization unit - need to use ARN, but not o-XXXXXXXXXX id, arn can be tak
 
 Documentation: https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organization.html
 
-"If you wish to share with the principal, accepting the sharing is mandatory. Please see examples."
+If you wish to share with the principal, accepting the sharing is mandatory. Please see examples.
 
 
 

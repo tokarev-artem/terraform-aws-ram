@@ -9,7 +9,7 @@ content: |-
     version       = "~> 1.0"
     name          = "Share Subnets to develop account"
     resource_arns = ["arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-1234567abcd", "arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-abcdef1234"]
-    principals    = ["arn:aws:organizations::101987654321:organization/o-abcdef1234", "123456789101"]
+    principals    = ["arn:aws:organizations::101987654321:organization/o-abcdef1234", "55555555555"]
     tags = {
       OwnedBy = "network"
     }
