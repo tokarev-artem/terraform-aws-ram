@@ -5,7 +5,7 @@ This module allows you to share [supported](https://docs.aws.amazon.com/ram/late
 # Example usage:
 ```hcl
 module "aws-ram" {
-  source        = "RealArtemiy/ram/aws"
+  source        = "tokarev-artem/ram/aws"
   version       = "~> 1.0"
   name          = "Share Subnets to develop account"
   resource_arns = ["arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-1234567abcd", "arn:aws:ec2:eu-central-1:123456789101:subnet/subnet-abcdef1234"]
