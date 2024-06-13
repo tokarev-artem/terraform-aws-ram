@@ -4,8 +4,8 @@ variable "name" {
 }
 variable "allow_external_principals" {
   type        = bool
-  description = "Indicates whether principals outside your organization can be associated with a resource share."
   default     = true
+  description = "Indicates whether principals outside your organization can be associated with a resource share."
 }
 variable "principals" {
   type        = list(string)
@@ -17,6 +17,11 @@ variable "resource_arns" {
 }
 variable "tags" {
   type        = map(string)
-  description = "Tags map for aws_ram_resource_share resource"
   default     = {}
+  description = "Tags map for aws_ram_resource_share resource"
+}
+variable "permission_arns" {
+  type        = list(string)
+  default     = []
+  description = "Specifies the Amazon Resource Names (ARNs) of the RAM permission to associate with the resource share. If you do not specify an ARN for the permission, RAM automatically attaches the default version of the permission for each resource type. You can associate only one permission with each resource type included in the resource share."
 }
