@@ -6,7 +6,7 @@ module "share_to_org" {
 }
 
 module "ssm_read_only" {
-  source          = "../"
+  source          = "../../"
   name            = "share ssm parameter with read only permissions"
   resource_arns   = ["arn:aws:ssm:us-east-1:987654321101:parameter/parameter_name"]
   principals      = ["55555555555"]
@@ -14,7 +14,7 @@ module "ssm_read_only" {
 }
 
 module "ssm_read_only_with_history" {
-  source          = "../"
+  source          = "../../"
   name            = "share ssm parameter with read only permissions with history"
   resource_arns   = ["arn:aws:ssm:us-east-1:987654321101:parameter/parameter_name"]
   principals      = ["55555555555"]
